@@ -1,27 +1,65 @@
-# BlogEditors
+# BLOG-EDITOR-ANGULAR-TEST
+ The aim of this project is to try and test 3 Blog editors so the client could choose one of all three 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+## MediumEditor 
+Is a pure JS Lightweight Editors currntly need a lot of work a round to work with Angular 
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Data saved and retrived in a form of **HTML markup**
 
-## Code scaffolding
+ex: 
+<section name="0ed1" class="section section--body section--first">
+   <div class="section-divider">
+      <hr class="section-divider">
+   </div>
+   <div class="section-content">
+      <div class="section-inner sectionLayout--insetColumn">
+         <h3 name="f8e8" class="graf graf--h3 graf--leading graf--title">
+            <br>
+         </h3>
+         <p name="982b" class="graf graf--p graf-after--h3">
+            The example of text that was written in <strong class="markup--strong markup--p-strong">one of popula</strong>r text editors.
+         </p>
+         <h3 name="c2ad" class="graf graf--h3 graf-after--p">
+            With the header of course
+         </h3>
+         <p name="83d3" class="graf graf--p graf-after--h3">
+            So what do we have?
+         </p>
+      </div>
+   </div>
+</section>
+<section name="d1d2" class="section section--body">
+  ...
+</section>
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## EditorJS
+ **block-styled** editor for rich media stories. It outputs clean data in *JSON* instead of heavy HTML-markup.
+ 
+ {
+    "time" : 1550476186479,
+    "blocks" : [
+        {
+            "type" : "paragraph",
+            "data" : {
+                "text" : "The example of text that was written in <b>one of popular</b> text editors."
+            }
+        },
+        {
+            "type" : "header",
+            "data" : {
+                "text" : "With the header of course",
+                "level" : 2
+            }
+        },
+        {
+            "type" : "paragraph",
+            "data" : {
+                "text" : "So what do we have?"
+            }
+        }
+    ],
+    "version" : "2.8.1"
+}
+ 
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
