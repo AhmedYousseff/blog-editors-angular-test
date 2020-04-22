@@ -8,6 +8,8 @@ Is a pure JS Lightweight Editors currntly need a lot of work a round to work wit
 Data saved and retrived in a form of **HTML markup**
 
 ex: 
+
+```
 <section name="0ed1" class="section section--body section--first">
    <div class="section-divider">
       <hr class="section-divider">
@@ -32,10 +34,10 @@ ex:
 <section name="d1d2" class="section section--body">
   ...
 </section>
-
+```
 ## EditorJS
  **block-styled** editor for rich media stories. It outputs clean data in *JSON* instead of heavy HTML-markup.
- 
+ ```
  {
     "time" : 1550476186479,
     "blocks" : [
@@ -61,5 +63,6 @@ ex:
     ],
     "version" : "2.8.1"
 }
+```
  
 
