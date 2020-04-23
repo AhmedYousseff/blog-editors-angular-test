@@ -1,0 +1,25 @@
+
+.editable.medium-editor-element {
+  border: 1px solid red;
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  text-align: center;
+  padding-top: 150px;
+}
+.title.medium-editor-element {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  padding-left: 30px;
+  font-size: 2.5rem;
+  position: relative;
+  top: 130px;
+  &[data-placeholder] {
+    height: 100px;
+    display: flex;
+    font-size: 2.5rem;
+    align-items: center;
+    padding-left: 30px;
+  }
+}
